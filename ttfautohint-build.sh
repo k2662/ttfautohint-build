@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # shellcheck disable=SC2103
 # shellcheck disable=SC2003
 # shellcheck disable=SC2006
