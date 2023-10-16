@@ -157,7 +157,6 @@ cd "$FREETYPE" || exit 1
 # (which is what we want).
 ./configure \
   --without-bzip2 \
-  --without-png \
   --without-zlib \
   --without-harfbuzz \
   --prefix="$INST" \
