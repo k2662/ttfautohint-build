@@ -10,6 +10,8 @@ jobs:
       - name: Check out source repository
         uses: actions/checkout@v2
       - name: Install Deps
+        run: brew upgrade llvm
+      - name: Install Deps
         run: brew install llvm@17 libpng tcl-tk harfbuzz freetype fontconfig cairo icu4c glib zlib bzip2
       - name: macOS build test
         run: make
