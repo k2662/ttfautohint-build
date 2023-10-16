@@ -41,9 +41,9 @@ INST="$BUILD/local"
 TTFAUTOHINT_BIN="$INST/bin/ttfautohint"
 
 # The library versions.
-FREETYPE_VERSION="2.10.2"
-HARFBUZZ_VERSION="2.7.2"
-TTFAUTOHINT_VERSION="1.8.3"
+FREETYPE_VERSION="2.12.1"
+HARFBUZZ_VERSION="8.2.1"
+TTFAUTOHINT_VERSION="1.8.4"
 
 # Necessary patches (lists of at most 10 URLs each separated by whitespace,
 # to be applied in order).
