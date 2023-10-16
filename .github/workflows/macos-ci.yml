@@ -14,6 +14,6 @@ jobs:
       - name: Update Brew
         run: brew upgrade
       - name: Install Deps
-        run: brew install llvm libpng tcl-tk harfbuzz cairo 
+        run: brew install llvm libpng tcl-tk harfbuzz freetype fontconfig cairo icu4c glib py3cairo zlib bzip2
       - name: macOS build test
         run: make
