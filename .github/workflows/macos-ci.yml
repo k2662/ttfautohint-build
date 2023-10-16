@@ -9,5 +9,7 @@ jobs:
     steps:
       - name: Check out source repository
         uses: actions/checkout@v2
+      - name: Check out source repository
+        run: brew install llvm
       - name: macOS build test
         run: make
