@@ -156,9 +156,6 @@ cd "$FREETYPE" || exit 1
 # doesn't find a working pkg-config, falling back to the stored strings
 # (which is what we want).
 ./configure \
-  --without-bzip2 \
-  --without-zlib \
-  --without-harfbuzz \
   --prefix="$INST" \
   --enable-static \
   --disable-shared \
@@ -181,12 +178,7 @@ cd "$HARFBUZZ" || exit 1
 # Value `true' for `PKG_CONFIG' ensures that XXX_CFLAGS and XXX_LIBS
 # get actually used.
 ./configure \
-  --disable-dependency-tracking \
   --disable-gtk-doc-html \
-  --with-glib=no \
-  --with-cairo=no \
-  --with-fontconfig=no \
-  --with-icu=no \
   --prefix="$INST" \
   --enable-static \
   --disable-shared \
