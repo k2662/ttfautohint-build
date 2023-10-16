@@ -211,7 +211,6 @@ cd "$TTFAUTOHINT" || exit 1
 # Value `true' for `PKG_CONFIG' ensures that XXX_CFLAGS and XXX_LIBS
 # get actually used.
 ./configure \
-  --disable-dependency-tracking \
   --without-qt \
   --without-doc \
   --prefix="$INST" \
