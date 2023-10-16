@@ -9,7 +9,11 @@ jobs:
     steps:
       - name: Check out source repository
         uses: actions/checkout@v2
+      - name: Update Brew
+        run: brew update
+      - name: Update Brew
+        run: brew upgrade
       - name: Install Deps
-        run: brew install llvm libpng tcl-tk
+        run: brew install llvm libpng tcl-tk harfbuzz cairo 
       - name: macOS build test
         run: make
